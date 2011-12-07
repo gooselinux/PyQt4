@@ -1,0 +1,12 @@
+diff -up PyQt-x11-gpl-4.6.2/configure.py.webkit PyQt-x11-gpl-4.6.2/configure.py
+--- PyQt-x11-gpl-4.6.2/configure.py.webkit	2010-05-28 15:44:16.812555954 +0200
++++ PyQt-x11-gpl-4.6.2/configure.py	2010-05-28 15:44:28.642431214 +0200
+@@ -338,7 +338,7 @@ class ConfigurePyQt4:
+                 extra_libs=sql_libs)
+         check_module("QtSvg", "qsvgwidget.h", "new QSvgWidget()")
+         check_module("QtTest", "QtTest", "QTest::qSleep(0)")
+-        check_module("QtWebKit", "qwebpage.h", "new QWebPage()")
++        #check_module("QtWebKit", "qwebpage.h", "new QWebPage()")
+         check_module("QtXml", "qdom.h", "new QDomDocument()")
+         check_module("QtXmlPatterns", "qxmlname.h", "new QXmlName()")
+         check_module("phonon", "videowidget.h",

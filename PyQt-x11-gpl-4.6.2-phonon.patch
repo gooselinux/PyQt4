@@ -1,0 +1,12 @@
+diff -up PyQt-x11-gpl-4.6.2/configure.py.phonon PyQt-x11-gpl-4.6.2/configure.py
+--- PyQt-x11-gpl-4.6.2/configure.py.phonon	2009-11-27 16:40:15.076610119 -0600
++++ PyQt-x11-gpl-4.6.2/configure.py	2009-11-27 16:41:42.656347184 -0600
+@@ -341,7 +341,7 @@ class ConfigurePyQt4:
+         check_module("QtWebKit", "qwebpage.h", "new QWebPage()")
+         check_module("QtXml", "qdom.h", "new QDomDocument()")
+         check_module("QtXmlPatterns", "qxmlname.h", "new QXmlName()")
+-        check_module("phonon", "Phonon/VideoWidget",
++        check_module("phonon", "videowidget.h",
+                 "new Phonon::VideoWidget()")
+         check_module("QtAssistant", "qassistantclient.h",
+                 "new QAssistantClient(\"foo\")", extra_lib_dirs=ass_lib_dirs,
